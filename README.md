@@ -29,7 +29,7 @@
 ## Documentation
 
 Swagger documentation is available at<br>
-<host>/api/
+<p>&lt;host&gt;/api/</p>
 
 ## Installation
 
