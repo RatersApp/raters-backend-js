@@ -26,6 +26,11 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Documentation
+
+Swagger documentation is available at
+<host>/api/
+
 ## Installation
 
 ```bash
