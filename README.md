@@ -28,7 +28,7 @@
 
 ## Documentation
 
-Swagger documentation is available at
+Swagger documentation is available at<br>
 <host>/api/
 
 ## Installation
