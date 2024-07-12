@@ -30,8 +30,6 @@ Raters is a comprehensive platform for rating various entities. This repository 
 
 This project utilizes the following key packages:
 
-## Used Packages
-
 - **@dfinity/identity**: This package provides tools for managing decentralized identities. It allows users to authenticate securely and manage their identity without relying on central authorities.
 
 - **@dfinity/candid**: Candid is a type system used for defining and validating data types in the Internet Computer ecosystem. This package facilitates the serialization and deserialization of data structures, ensuring smooth communication between the frontend and backend.
