@@ -4,6 +4,10 @@ import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';
 import {AppModule} from './app.module';
 
 async function bootstrap() {
+  BigInt.prototype['toJSON'] = function () {
+    return this.toString();
+  };
+
   const app = await NestFactory.create(AppModule);
 
   const globalPrefix = process.env.API_PREFIX;

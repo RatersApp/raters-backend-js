@@ -74,12 +74,10 @@ RUN set -ex \
   && yarn --version \
   && rm -rf /tmp/*
 
-ADD docker-entrypoint.sh /usr/local/bin/
-
-ADD . ./
-
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-
 EXPOSE 3000
 
-CMD [ "node" ]
+COPY . ./
+RUN npm install
+RUN npm run build
+
+CMD [ "node", "/dist/main.js"]
