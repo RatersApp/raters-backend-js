@@ -62,7 +62,7 @@ cd raters-backend-js</code></pre>
     <li><strong>Install dependencies:</strong>
         <pre><code>npm install</code></pre>
     </li>
-    <li><strong>Create a <code>.env</code> file in the root directory and add the following environment variables:</strong>
+    <li><strong>Create a <code>.env</code> file in the 'services' directory and add the following environment variables:</strong>
         <pre><code>CANISTER_HOST=https://ic0.app
 CANISTER_ID=
 </code></pre>
