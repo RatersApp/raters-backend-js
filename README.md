@@ -1,6 +1,6 @@
 # Raters Backend JS
 
-Welcome to the Raters Backend JS repository! This project contains the backend code for the Raters app, implemented using Node.js.
+This project contains a part of the Raters app's backend, specifically focusing on blockchain integration and encryption functionalities, implemented using Node.js.
 
 ## Table of Contents
 
