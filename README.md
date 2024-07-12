@@ -1,78 +1,73 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Raters Backend JS
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Welcome to the Raters Backend JS repository! This project contains the backend code for the Raters app, implemented using Node.js.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Table of Contents
 
-## Description
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Project Overview
 
-## Documentation
+Raters is a comprehensive platform for rating various entities. This repository contains the backend implementation of the Raters app, which provides APIs for managing users, ratings, and other related functionalities.
 
-Swagger documentation is available at<br>
-<p>&lt;host&gt;/api/</p>
+## Features
 
-## Installation
+- User Authentication and Authorization
+- CRUD operations for Ratings
+- API endpoints for various entities
+- Middleware for validation and error handling
 
-```bash
-$ npm install
-```
+## Technologies Used
 
-## Building the app
+- Node.js
+- Nest.js
+- Jest for Testing
 
-```bash
-$ npm run build
-```
+## Used Packages
 
-## Running the app
+This project utilizes the following key packages:
 
-```bash
-# development
-$ npm run start
+## Used Packages
 
-# watch mode
-$ npm run start:dev
+- **@dfinity/identity**: This package provides tools for managing decentralized identities. It allows users to authenticate securely and manage their identity without relying on central authorities.
 
-# production mode
-$ npm run start:prod
-```
+- **@dfinity/candid**: Candid is a type system used for defining and validating data types in the Internet Computer ecosystem. This package facilitates the serialization and deserialization of data structures, ensuring smooth communication between the frontend and backend.
 
-## Test
+- **@dfinity/agent**: The DFINITY agent package is used for interacting with the Internet Computer's canisters (smart contracts). It provides methods for making calls to canisters, handling authentication, and managing responses efficiently.
 
-```bash
-# unit tests
-$ npm run test
+These packages are essential for enabling secure interactions and identity management within the Raters app.
 
-# e2e tests
-$ npm run test:e2e
+## Signature Verification
 
-# test coverage
-$ npm run test:cov
-```
+### NFID and Internet Identity (II)
 
-## Support
+This project includes functionality to verify signatures using NFID (Non-Fungible Identity) and Internet Identity (II). These mechanisms ensure secure and reliable user authentication by validating the authenticity of the signatures.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- **NFID**: A decentralized identity standard that allows users to control their identity without relying on a central authority. Signatures generated with NFID are verified to ensure they have been produced by a legitimate entity.
 
-## License
+- **Internet Identity (II)**: A secure authentication system developed by DFINITY for the Internet Computer. It enables users to authenticate using their devices without needing traditional passwords. The backend verifies the signatures provided by Internet Identity to authenticate users securely.
 
-Nest is [MIT licensed](LICENSE).
+For more details on implementing and utilizing these verification methods, please refer to the respective documentation and integration guides.
+
+<h2>Installation</h2>
+<p>To run this project locally, follow these steps:</p>
+<ol>
+    <li><strong>Clone the repository:</strong>
+        <pre><code>git clone https://github.com/RatersApp/raters-backend-js.git
+cd raters-backend-js</code></pre>
+    </li>
+    <li><strong>Install dependencies:</strong>
+        <pre><code>npm install</code></pre>
+    </li>
+    <li><strong>Create a <code>.env</code> file in the root directory and add the following environment variables:</strong>
+        <pre><code>CANISTER_HOST=https://ic0.app
+CANISTER_ID=
+</code></pre>
+    </li>
+    <li><strong>Start the development server:</strong>
+        <pre><code>npm run start</code></pre>
+    </li>
+</ol>
